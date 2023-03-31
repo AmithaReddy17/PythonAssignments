@@ -1,0 +1,670 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# 
+
+# In[1]:
+
+
+## Module_1##
+##T1_T2##
+# 1#
+a=1
+b=2.01
+c="Hello World"
+
+
+# In[3]:
+
+
+print("a =", a)
+print("b =", b)
+print("c =", c)
+
+
+# In[1]:
+
+
+
+complex_num = 3+4j
+print('complex variable:',complex_num)
+
+
+# In[2]:
+
+
+#2#
+complex_num = 3+4j
+print('complex variable:',complex_num)
+
+
+# In[3]:
+
+
+int_num =10
+print('Integer varaible:', int_num)
+
+
+# In[4]:
+
+
+complex_num,int_num = int_num,complex_num
+
+
+# In[5]:
+
+
+print('After swapping:')
+print('complex variable:', complex_num)
+print('Integer variable:', int_num)
+
+
+# In[6]:
+
+
+print('After swapping:')
+print('complex variable:', complex_num)
+print('Integer variable:', int_num)
+
+
+# In[7]:
+
+
+#3#
+a=10
+b=30
+print("Before Swapping: a=", a, "b=", b)
+
+
+# In[8]:
+
+
+#swap two variables with using third variable#
+temp = a
+a=b
+b=temp
+print("After Swapping:a=", a, "b=", b)
+
+
+# In[9]:
+
+
+#swap two variables without using third variable#
+a=10
+b=20
+print("Before Swapping: a=", a, "b=", b)
+
+
+# In[10]:
+
+
+a,b = b,a
+print("After Swapping:a=", a, "b=", b)
+
+
+# In[12]:
+
+
+#4#
+# Taking user input in Python 2.x
+user_input = raw_input("Hi Amitha: ")
+print ("user input: " + user_input)
+
+
+# In[13]:
+
+
+#4#
+# Taking user input in Python 2.x
+user_input = raw_input("Hi Amitha: ")
+print ("user input: " + user_input)
+
+
+# In[14]:
+
+
+#4#
+# Taking user input in Python 2.x
+user_input = raw_input("Hi Amitha: ")
+print ("Hi Amitha: " + user_input)
+
+
+# In[15]:
+
+
+#4#
+# Taking user input in Python 2.x
+user_input = input("Hi Amitha: ")
+print ("Hi Amitha: " + user_input)
+
+
+# In[16]:
+
+
+#4#
+# Taking user input in Python 2.x version#
+user_input = raw_input("Hi: ")
+print "Hi: " + user_input
+
+# Taking user input in Python 3.x version#
+user_input = input("Hi Amitha: ")
+print ("Hi Amitha: " + user_input)
+
+
+# In[17]:
+
+
+#5#
+num1 = int(input("Enter the first number between 1-10: "))
+num2 = int(input("Enter the second number between 1-10: "))
+
+
+# In[18]:
+
+
+z = 5 + 8
+result = z + 30
+
+
+# In[19]:
+
+
+print("The sum of", num1, "and", num2, "is", z)
+print("After adding 30, the result is", result)
+
+
+# In[ ]:
+
+
+#6#
+#Write a program to check the data type of the entered values#
+
+
+# In[20]:
+
+
+#string#
+x = input("Enter the first number:")
+
+
+# In[21]:
+
+
+y = input("Enter the second number:")
+
+
+# In[22]:
+
+
+z = x+y
+print(z)
+
+
+# In[23]:
+
+
+type(z)
+
+
+# In[24]:
+
+
+#Integer#
+x = int(input("Enter the first number:"))
+
+
+# In[25]:
+
+
+y = int(input("Enter the second number:"))
+
+
+# In[26]:
+
+
+z = x+y
+print(z)
+
+
+# In[27]:
+
+
+type(z)
+
+
+# In[28]:
+
+
+#Boolean#
+a = 9
+b = 10
+a>b
+
+
+# In[29]:
+
+
+type(a>b)
+
+
+# In[30]:
+
+
+#8#
+#Yes, assigning a different data type value to a variable that already contains a value of a different data type will change the value and data type of the variable#
+#int#
+a = 10
+print(a)
+
+
+# In[31]:
+
+
+#string#
+a = "Hello"
+print(a)
+
+
+# In[32]:
+
+
+##TASK TWO##
+##OPERATORS AND DECISION MAKING STATEMENT##
+#1#
+num = int(input("Enter a number: "))
+
+
+# In[33]:
+
+
+if num % 3 == 0 and num % 5 == 0:
+    print("Consultadd - Python Training")
+elif num % 3 == 0:
+    print("Consultadd")
+elif num % 5 == 0:
+    print("Python Training")
+else:
+    print("The number is not divisible by 3 or 5")
+
+
+# In[34]:
+
+
+#2#
+option = int(input("Enter your option (1 for Addition, 2 for Subtraction, 3 for Division, 4 for Multiplication): "))
+
+
+# In[35]:
+
+
+#2#
+option = int(input("Enter your option (1 for Addition, 2 for Subtraction, 3 for Division, 4 for Multiplication): "))
+
+
+# In[36]:
+
+
+#Ask user to enter two numbers and keep those numbers in variables num1 and num2 respectively for the first 4 options mentioned above#
+
+option = int(input("Enter your option (1 for Addition, 2 for Subtraction, 3 for Division, 4 for Multiplication, 5 for Average): "))
+
+if option != 5:
+    num1 = float(input("Enter first number: "))
+    num2 = float(input("Enter second number: "))
+elif option == 5:
+    first = float(input("Enter first number for average: "))
+    second = float(input("Enter second number for average: "))
+    
+if option == 1:
+    result = num1 + num2
+elif option == 2:
+    result = num1 - num2
+elif option == 3:
+    result = num1 / num2
+elif option == 4:
+    result = num1 * num2
+elif option == 5:
+    result = (first + second) / 2
+    
+if result < 0:
+    print("NEGATIVE")
+
+
+# In[37]:
+
+
+option = int(input("Enter your option (1 for Addition, 2 for Subtraction, 3 for Division, 4 for Multiplication, 5 for Average): "))
+
+if option != 5:
+    num1 = float(input("Enter first number: "))
+    num2 = float(input("Enter second number: "))
+elif option == 5:
+    first = float(input("Enter first number for average: "))
+    second = float(input("Enter second number for average: "))
+    
+if option == 1:
+    result = num1 + num2
+elif option == 2:
+    result = num1 - num2
+elif option == 3:
+    result = num1 / num2
+elif option == 4:
+    result = num1 * num2
+elif option == 5:
+    result = (first + second) / 2
+    
+if result < 0:
+    print("NEGATIVE")
+
+
+# In[38]:
+
+
+##Ask the user to enter two more numbers as first and second for calculating the average as soon as the user chooses an option 5##
+
+option = int(input("Enter your option (1 for Addition, 2 for Subtraction, 3 for Division, 4 for Multiplication, 5 for Average): "))
+
+if option != 5:
+    num1 = float(input("Enter first number: "))
+    num2 = float(input("Enter second number: "))
+elif option == 5:
+    first = float(input("Enter first number for average: "))
+    second = float(input("Enter second number for average: "))
+    
+if option == 1:
+    result = num1 + num2
+elif option == 2:
+    result = num1 - num2
+elif option == 3:
+    result = num1 / num2
+elif option == 4:
+    result = num1 * num2
+elif option == 5:
+    result = (first + second) / 2
+    
+if result < 0:
+    print("NEGATIVE")
+
+
+# In[39]:
+
+
+##3##
+##Write a program in Python to implement the given flowchart:##
+
+a = 10
+b = 20
+c = 30
+
+avg = (a + b + c)/3
+print("avg=", avg)
+
+if avg > a and avg > b and avg > c:
+    print("avg is higher than a,b,c")
+elif avg > a and avg > b:
+    print("avg is higher than a,b,c")
+elif avg > a and avg > c:
+    print("avg is higher than a,c")
+elif avg > b and avg > c:
+    print("avg is higher than b,c")
+elif avg > a:
+    print("avg is just higher than a")
+elif avg > b:
+    print("avg is just higher than b")
+elif avg > c:
+    print("avg is just higher than c")
+
+
+# In[40]:
+
+
+##4##
+
+num = int(input("Enter a number: "))
+    
+if num < 4:
+    print("It's Over")
+    break
+else:
+    print("Good Going")
+    continue
+
+
+# In[42]:
+
+
+
+
+
+# In[43]:
+
+
+##4##
+#Write a program in Python to break and continue if the following cases occurs:#
+
+num = int(input("Enter a number: "))
+    
+if num < 4:
+    print("It's Over")
+    'break'
+else:
+    print("Good Going")
+    'continue'
+
+
+# In[46]:
+
+
+##5##
+
+result = []
+for i in range(2000, 3200):
+    if i % 7 == 0 and i % 5 != 0:
+        result.append(i)
+        print(result)
+
+
+# In[45]:
+
+
+result = [2044]
+for i in range(2000, 3200):
+    if i % 7 == 0 and i % 5 != 0:
+        result.append(i)
+        print(result)
+
+
+# In[48]:
+
+
+##6##
+x=123
+for i in (x):
+print(i)
+
+
+# In[49]:
+
+
+x=123
+for i in x:
+print(i)
+
+
+# In[ ]:
+
+
+##6##
+
+x=123
+for i in x:
+print(i)
+
+#output:This will output the numbers 0 through 122, since the range function generates a sequence that starts at 0 by default and ends at x-1.#
+
+
+# In[ ]:
+
+
+i=0
+while i < 5:
+    print(i)
+i += 1
+if i == 3:
+    break
+    else:
+        print("error")
+        
+#Output: 0
+    1
+    2#
+
+
+# In[1]:
+
+
+##7##
+##Write a program that prints all the numbers from 0 to 6 except 3 and 6.##
+
+for i in range(6):
+    if i == 3 or i == 6:
+        continue
+    print(i, end=' ')
+
+
+# In[2]:
+
+
+##8##
+
+string = input("Enter a string: ")
+
+
+# In[3]:
+
+
+#8#
+#Write a program that accepts a string as an input from the user and calculate the number of digits and letters.#string = input("Enter a string: ")
+
+
+# In[4]:
+
+
+letters = 0
+digits = 0
+
+for char in string:
+    if char.isalpha():
+        letters += 1
+    elif char.isdigit():
+        digits += 1
+
+print("Letters:", letters)
+print("Digits:", digits)
+
+
+# In[5]:
+
+
+#9#
+while True:
+    guess = int(input("Guess the lucky number: "))
+    if guess == lucky_number:
+        print("Congratulations, you guessed the lucky number!")
+        break
+    else:
+        print("Sorry, try again!")
+
+
+# In[6]:
+
+
+#9#
+#Write a program such that it asks users to “guess the lucky number”. If the correct number is guessed the program stops, otherwise it continues forever.#
+#a#
+lucky_number = 12
+
+while True:
+    guess = int(input("Guess the lucky number: "))
+    if guess == lucky_number:
+        print("Congratulations, you guessed the lucky number!")
+        break
+    else:
+        print("Sorry, try again!")
+
+
+# In[8]:
+
+
+#b#
+
+lucky_number = 12
+answer = 'yes'
+
+while answer.lower() != 'no':
+    guess = int(input("Guess the lucky number: "))
+    if guess == lucky_number:
+        print("Congratulations, you guessed the lucky number!")
+        break
+    else:
+        answer = input("Sorry, try again! Do you want to guess again? (yes/no) ")
+
+
+# In[9]:
+
+
+#10#
+
+lucky_number = 9
+counter = 1
+
+while counter <= 5:
+    guess = int(input("Type in the {} number: ".format(counter)))
+    if guess == lucky_number:
+        print("Good guess!")
+        break
+    else:
+        print("Try again!")
+        counter += 1
+
+if counter == 6:
+    print("Game over!")
+
+
+# In[10]:
+
+
+#10#
+
+lucky_number = 9
+counter = 1
+
+while counter <= 5:
+    guess = int(input("Type in the {} number: ".format(counter)))
+    if guess == lucky_number:
+        print("Good guess!")
+        break
+    else:
+        print("Try again!")
+        counter += 1
+
+if counter == 6:
+    print("Game over!")
+
+
+# In[11]:
+
+
+#11#
+
+lucky_number = 9
+counter = 1
+
+while counter <= 5:
+    guess = int(input("Type in the {} number: ".format(counter)))
+    if guess == lucky_number:
+        print("Good guess!")
+        break
+    else:
+        print("Sorry but that was not very successful.")
+
